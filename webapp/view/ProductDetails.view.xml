@@ -1,0 +1,38 @@
+<mvc:View controllerName="com.demo.productuiapp.controller.ProductDetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="_IDGenTable1" items="{ProductModel>/ProductCollection}">
+                <columns>
+                    <Column id="_IDGenColumn" >
+                        <Label id="_IDGenLabel" text="Product ID"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn1" >
+                        <Label id="_IDGenLabel1" text="Name"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn2" >
+                        <Label id="_IDGenLabel2" text="Category"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn3" >
+                        <Label id="_IDGenLabel3" text="Price"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn4" >
+                        <Label id="_IDGenLabel4" text="Quantity"></Label>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem">
+                        <cells>
+                            <Text text="{ProductModel>ProductId}" />
+                            <Text text="{ProductModel>Name}" />
+                            <Text text="{ProductModel>Category}" />
+                            <Text text="{ProductModel>Price}" />
+                            <Text text="{ProductModel>Quantity}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
